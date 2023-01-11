@@ -42,7 +42,7 @@ endif()
 install(EXPORT ${PROJECT_NAME}Targets
   NAMESPACE ${PROJECT_NAME}::
   FILE "${PROJECT_NAME}Targets.cmake"
-  DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}/"
+  DESTINATION "${GAUDI_INSTALL_CONFIGDIR}/"
   )
 
 gaudi_install(CMAKE cmake/${PROJECT_NAME}Config.cmake)
